@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    
+}
+@keyframes loder {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#form{
+    animation: loder 2s;
+    position: absolute;
+    margin:10% 37%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    width: fit-content;
+    /* justify-content: center; */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(60, 60, 60);
+    background: rgb(197, 197, 197,0.1);
+    backdrop-filter: blur(10px);
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#form input{
+    width: 400px;
+    height: 60px;
+    padding: 0px 20px;
+    font-size: 30px;
+    color: gray;
+    background: rgb(197, 197, 197,0.4);
+    backdrop-filter: blur(10px);
+    opacity: 0.5;
+    border:none;
+    margin-bottom: 20px;
+}
+#login{
+    font-size: 25px;
+    height: 40px;
+    width:200px;
+    border-radius: 20px;
+    color: gray;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+#sign{
+    font-size: 25px;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    background-color: gray;
+}
+#btn{
+    z-index: 999;
+    margin-top: 20px;
+}
+
+#cir1{
+    /* animation: cir1 2s ease-in-out;
+    animation-play-state: paused; */
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 255);
+    border-radius: 50%;
+    filter: blur(70px);
+    position: absolute;
+    top: 500px;
+    margin-left: 30%;
+    /* margin-bottom: 40%; */
+}
+.cir1{
+    animation: cir1 10s ease-in-out infinite;
+    animation-play-state: running;
+}
+@keyframes cir1 {
+    0%{
+        top: 500px;
+    }
+
+    20%{
+        top:200px;
+        margin-left: 30%;
+    }
+    50%{
+        top:200px;
+        margin-left: 55%;
+    }
+    80%{
+        top:500px;
+        margin-left: 55%;
+    }
+}
+.cir2{
+    animation: cir2 10s ease-in-out infinite;
+}
+@keyframes cir2 {
+    0%{
+        top: 100px;
+    }
+    20%{
+        top:500px;
+        margin-left: 55%;
+    }
+    50%{ 
+        top:500px;
+        margin-left: 30%;
+    }
+    80%{
+        top:100px;
+        margin-left: 30%;
+    }
+}
+#cir2{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(30, 1, 255);
+    border-radius: 50%;
+    filter: blur(70px);
+    position: absolute;
+    top: 100px;
+    margin-left: 55%;
+    /* margin-bottom: 40%; */
+}
+@media (max-width: 800px) {
+    #form{
+        animation: loder 2s;
+        position: absolute;
+        margin:40% 15%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        width: 250px;
+    }
+    #form input{
+        width: 200px;
+        height: 30px;
+        padding: 0px 20px;
+        font-size: 20px;
+        background: rgb(197, 197, 197,0.4);
+        backdrop-filter: blur(10px);
+        opacity: 0.5;
+        border:none;
+        margin-bottom: 20px;
+    }
+    #btn{
+        margin: auto 10%;
+    }
+    #login{
+        margin: 10px auto;
+    }
+    #sign{
+        background-color: rgb(107, 0, 214);
+    }
+    #cir1{
+        width: 200px;
+        height: 200px;
+        top: 500px;
+        margin-left: 0px ;
+    }
+    .cir1{
+        animation: cir1 10s ease-in-out infinite;
+        animation-play-state: running;
+    }
+    @keyframes cir1 {
+        0%{
+            top: 500px;
+        }
+    
+        20%{
+            top:100px;
+            margin-left: 30%;
+        }
+        50%{
+            top:100px;
+            margin-left: 55%;
+        }
+        80%{
+            top:500px;
+            margin-left: 55%;
+        }
+    }
+    #cir2{
+        width:300px;
+        height:300px;
+        margin-left: 120px;
+    }
+    .cir2{
+        /* animation: cir2 10s ease-in-out infinite; */
+    }
+    @keyframes cir2 {
+        0%{
+            top: 100px;
+        }
+        20%{
+            top:500px;
+            margin-left: 120px;
+        }
+        50%{ 
+            top:500px;
+            margin-left: 0px;
+        }
+        80%{
+            top:100px;
+            margin-left: 0px;
+        }
+    }
+
+}

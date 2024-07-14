@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cir1"></div>
+        <div id="cir2"></div>
+        <form action="" id="form">
+            <label>user name</label>
+            <input id="input1" type="text" type="text" placeholder="Enter username">
+            <label>Full Name</label>
+            <input id="input2" type="text" type="text" placeholder="Enter full name">
+            <label>email</label>
+            <input id="input3" type="email" type="text" placeholder="Enter email">
+            <label>Password</label>
+            <input id="input4" type="text" type="password" placeholder="Enter password">
+            <div id="btn">
+                <button type="button" id="login">login</button>
+                <button id="sign">creat</button>
+            </div>
+        </form>
+
+<script>
+    let click = true
+    let btn = document.getElementById("login")
+    btn.addEventListener('click',function (params) {
+        location.href = "login.html"
+        
+    })
+    function ani(params) {
+        let cir1 = document.getElementById("cir1")
+        cir1.classList = "cir1"
+        let cir2 = document.getElementById("cir2")
+        cir2.classList = "cir2"
+    }
+    let input1 = document.getElementById("input1")
+    input1.addEventListener("click", function (params) {
+        ani()
+    })
+    let input2 = document.getElementById("input2")
+    input2.addEventListener("click", function (params) {
+        ani()
+    })
+    let input3 = document.getElementById("input3")
+    input3.addEventListener("click", function (params) {
+        ani()
+    })
+    let input4 = document.getElementById("input4")
+    input4.addEventListener("click", function (params) {
+        ani()
+    })
+
+</script>
+</body>
+</html>

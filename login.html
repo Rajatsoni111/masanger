@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index2.css">
+    <title>login</title>
+</head>
+
+<body>
+
+    
+        <div id="cir1"></div>
+        <div id="cir2"></div>
+        <form action="" id="form">
+            <label>user name</label>
+            <input id="input1" type="text" type="text" placeholder="Enter username">
+            <label>Password</label>
+            <input id="input2" type="text" type="password" placeholder="Enter password">
+            <a href="">forget password</a>
+            <div id="btn">
+                <button id="login">login</button>
+                <button type="button" id="sign">sign up</button>
+            </div>
+        </form>
+
+<script>
+    let btn = document.getElementById("sign")
+    btn.addEventListener('click',function (params) {
+        location.href = "signup.html"
+        
+    })
+    let input1 = document.getElementById("input1")
+    input1.addEventListener("click", function (params) {
+        let cir1 = document.getElementById("cir1")
+        cir1.classList = "cir1"
+        let cir2 = document.getElementById("cir2")
+        cir2.classList = "cir2"
+    })
+    let input2 = document.getElementById("input2")
+    input2.addEventListener("click", function (params) {
+        let cir1 = document.getElementById("cir1")
+        cir1.classList = "cir1"
+        let cir2 = document.getElementById("cir2")
+        cir2.classList = "cir2"
+    })
+</script>
+</body>
+
+</html>
