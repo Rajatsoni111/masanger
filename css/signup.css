@@ -44,7 +44,7 @@ a{
 }
 
 
-#form input{
+#form #input1 , #input2 ,#input3{
     width: 350px;
     height: 40px;
     padding: 0px 20px;
@@ -56,15 +56,28 @@ a{
     border:none;
     margin-bottom: 20px;
 }
+#input4{
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    background: transparent;
+    border: none;
+}
 .pass{
-    top: 0;
+    padding-right: 20px;
+    width: 370px;
     display: flex;
     height: 40px;
+    background: rgb(197, 197, 197,0.4);
+    backdrop-filter: blur(10px);
+    opacity: 0.5;
     /* align-items: center; */
 }
 i{
-   margin: auto;
-   margin-left: -40px;
+   margin: auto 0px;
+   margin-left: 20px;
     color: rgb(61, 60, 60);
     font-size: 20px;
    }
@@ -202,8 +215,8 @@ i{
         width: 60%;
         padding: 10px 10px;
     }
-    #form input{
-        width: 180px;
+    #form #input1,#input2,#input3{
+        width: 80%;
         height: 30px;
         padding: 0px 20px;
         font-size: 20px;
@@ -213,13 +226,25 @@ i{
         border:none;
         margin-bottom: 20px;
     }
+    #input4{
+        width: 75%;
+        height: 30px;
+        font-size: 20px;
+    }
     #btn{
+        justify-content: center;
         margin: auto 10%;
+        display: flex;
+        flex-direction: column;
     }
     #login{
+        width: 70%;
         margin: 10px auto;
     }
     #sign{
+        width: 70%;
+        margin: 0px auto;
+
         background-color: rgb(107, 0, 214);
     }
     #cir1{
@@ -261,5 +286,16 @@ i{
         }
     }
     .pass{
+            padding-right: 0px;
+            width:95%;
+            display: flex;
+            height: 40px;
+            background: rgb(197, 197, 197,0.4);
+            backdrop-filter: blur(10px);
+            opacity: 0.5;
+            /* align-items: center; */
+        
 height: 30px;    }
+i{
+margin-left: 0px;}
 }
