@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/signup.css">
+    <script src="https://kit.fontawesome.com/8625ac6713.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -15,13 +16,17 @@
         
         <form action="" id="form">
             <label>user name</label>
-            <input id="input1" type="text" type="text" placeholder="Enter username">
+            <input id="input1" type="text" type="text" placeholder="Enter username" required>
             <label>Full Name</label>
-            <input id="input2" type="text" type="text" placeholder="Enter full name">
+            <input id="input2" type="text" type="text" placeholder="Enter full name" required>
             <label>email</label>
-            <input id="input3" type="email" type="text" placeholder="Enter email">
+            <input id="input3" type="email"  placeholder="Enter email" required>
             <label>Password</label>
-            <input id="input4" type="text" type="password" placeholder="Enter password">
+            <div class="pass">
+            <input id="input4"  type="password" placeholder="Enter password" required>
+            <i id="hide" class="fa-solid fa-eye"></i>
+            <i id="show" class="fa-solid fa-eye-slash"></i>            
+        </div>
             <div id="btn">
                 <button type="button" id="login">login</button>
                 <button id="sign">creat</button>

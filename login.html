@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/8625ac6713.js" crossorigin="anonymous"></script>
+
     <title>login</title>
 </head>
 
 <body>
 
-    
+
         <div id="cir1"></div>
         <div id="cir2"></div>
         <div id="first">
         <form action="" id="form">
             <label>user name</label>
-            <input id="input1" type="text" type="text" placeholder="Enter username">
+            <input id="input1" type="text"  placeholder="Enter username" required>
             <label>Password</label>
-            <input id="input2" type="text" type="password" placeholder="Enter password">
+            <div class="pass">
+            <input id="input2"  type="password" placeholder="Enter password" required>
+            <i id="hide" class="fa-solid fa-eye"></i>
+            <i id="show" class="fa-solid fa-eye-slash"></i>            
+        </div>
             <a href="">forget password</a>
             <div id="btn">
                 <button id="login">login</button>
@@ -26,6 +32,7 @@
             </div>
         </form>
     </div>
+
 
 <script src="script/login.js"></script>
 </body>
